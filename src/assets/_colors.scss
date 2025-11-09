@@ -1,0 +1,11 @@
+$parent-color: #ffc64b;
+$child-one-color: #8bc3ff;
+$child-two-color: #b0ffa9;
+$individual-color: #ff64ac;
+
+:root {
+  --parent-color: #{$parent-color};
+  --child-one-color: #{$child-one-color};
+  --child-two-color: #{$child-two-color};
+  --individual-color: #{$individual-color};
+}

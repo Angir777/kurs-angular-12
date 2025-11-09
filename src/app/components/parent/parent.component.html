@@ -1,0 +1,15 @@
+<div class="row parent-color">
+    <div class="col-12">
+        <p><strong>parent works!</strong></p>
+        <p>{{ messageFromChildOne() }}</p>
+    </div>
+    <div class="col-lg-6 child-one-color">
+        <app-child-one 
+            [parentMessage]="parentMessageToChildOne" 
+            [messageFromSibling]="messageFromChildTwo"
+            (messageToParent)="setMessageFromChildOne($event)" />
+    </div>
+    <div class="col-lg-6 child-two-color">
+        <app-child-two (messageToSibling)="forwardToChildOne($event)" />
+    </div>
+</div>
